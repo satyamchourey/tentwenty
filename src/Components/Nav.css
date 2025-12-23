@@ -1,0 +1,25 @@
+.nav_container {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  height: 101px;
+  opacity: 1;
+  align-items: center;
+  color: #000000;
+}
+
+.nav_links {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_container button{
+    width: 148px;
+    height: 36px;
+    border: 1px solid #000000;
+}
