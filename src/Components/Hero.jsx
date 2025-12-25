@@ -6,10 +6,8 @@ export default function Hero() {
   const duration = 5000;
 
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [isAnimating, setIsAnimating] = useState(false);
 
   const nextSlide = () => {
-    setIsAnimating(true);
     setCurrentSlide((prev) => (prev === totalSlides ? 1 : prev + 1));
   };
   const nextSlideNumber = currentSlide === totalSlides ? 1 : currentSlide + 1;

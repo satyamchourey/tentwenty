@@ -1,35 +1,3 @@
-// import React from "react";
-// import img5 from "../../Assets/5.jpg";
-// import img6 from "../../Assets/6.jpg";
-// import img7 from "../../Assets/7.jpg";
-// import img8 from "../../Assets/8.jpg";
-// import "./Section.css";
-
-// const images = [img5, img6, img7, img8];
-
-// export default function Section() {
-//   return (
-//     <section className="container">
-//       <div className="TextSection">
-//         <h1>Quality Products</h1>
-//         <p>
-//           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//         </p>
-//       </div>
-
-//       <div className="curve-slider">
-//         <div className="curve-track">
-//           {[...images, ...images].map((img, i) => (
-//             <div className="curve-slide" key={i}>
-//               <img src={img} alt="" />
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React, { useEffect, useRef } from "react";
 import img5 from "../../Assets/5.jpg";
 import img6 from "../../Assets/6.jpg";
@@ -95,6 +63,8 @@ export default function Section() {
           {images.map((img, i) => (
             <div className="curve-slide" key={i}>
               <img src={img} alt="" />
+              <h3>Client {i + 1}</h3>
+              <p>Dubai, United Arab Emirates</p>
             </div>
           ))}
         </div>

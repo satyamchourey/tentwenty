@@ -45,6 +45,7 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 .curve-track::-webkit-scrollbar {
@@ -72,9 +73,6 @@
 }
 
 
-/* =========================
-   Mobile Styles – Section
-   ========================= */
 @media (max-width: 480px) {
 
   .container {
@@ -96,7 +94,6 @@
     margin-top: 15px;
   }
 
-  /* ---------- CURVE SLIDER ---------- */
   .curve-wrapper {
     margin-top: 60px;
   }
