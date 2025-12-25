@@ -1,12 +1,14 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
   entry: "./src/index.jsx",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: process.env.NODE_ENV === 'production' ? '/tentwenty/' : '/',
+    publicPath: isProduction ? '/tentwenty/' : '/',
     clean: true,
   },
   resolve: {
@@ -27,7 +29,6 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         type: "asset/resource",
       }
-
     ],
   },
   plugins: [
@@ -41,5 +42,5 @@ module.exports = {
     open: true,
     hot: true,
   },
-  mode: "development",
+  mode: isProduction ? 'production' : 'development',
 };
