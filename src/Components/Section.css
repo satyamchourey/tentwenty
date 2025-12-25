@@ -1,121 +1,14 @@
-.container{
-    text-align: center;
-    margin: 153px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.TextSection h1{
-    font-family: Work Sans;
-    width: 749px;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 72px;
-    text-align: center;
-    color: #000000;
-
-}
-.TextSection p{
-    width: 748px;
-    font-family: Work Sans;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    text-align: center;
-    color : #7A7777;
-    margin-top: 30px;
-}
-
-.Slides{
-    margin-top: 100px;
-    display: flex;
-}
-
-/* Curve Slider Styles */
-.curve-wrapper {
-  margin-top: 120px;
-  width: 100%;
-  overflow: hidden;
-}
-
+/* Custom curve slide animations handled by JS */
 .curve-track {
-  display: flex;
-  gap: 80px;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
   scroll-behavior: smooth;
-  height: 100vh;
+  scrollbar-width: none;
 }
 
 .curve-track::-webkit-scrollbar {
   display: none;
 }
 
+/* Tailwind can't animate these dynamically */
 .curve-slide {
-  flex: 0 0 435px;
-  height: 620px;
-  scroll-snap-align: center;
-  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
   will-change: transform;
-}
-
-.curve-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
- img{
-    width: 434.9px;
-    height: 619.21px;
-}
-
-
-@media (max-width: 480px) {
-
-  .container {
-    margin: 80px auto;
-    padding: 0 16px;
-  }
-
-  .TextSection h1 {
-    width: 100%;
-    font-size: 30px;
-    line-height: 120%;
-    margin-top: 80px;
-  }
-
-  .TextSection p {
-    width: 100%;
-    font-size: 16px;
-    line-height: 140%;
-    margin-top: 15px;
-  }
-
-  .curve-wrapper {
-    margin-top: 60px;
-  }
-
-  .curve-track {
-    gap: 40px;
-  }
-
-  .curve-slide {
-    flex: 0 0 232.67px;
-    height: 331.27px;
-  }
-
-  .curve-slide img {
-    width: 232.67px;
-    height: 331.27px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-  img {
-    width: auto;
-    height: auto;
-  }
-
 }
