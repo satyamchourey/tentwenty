@@ -1,8 +1,8 @@
 /* Background Images */
-.slide_1 { background-image: url(../../assets/1.jpg); }
-.slide_2 { background-image: url(../../assets/2.jpg); }
-.slide_3 { background-image: url(../../assets/3.jpg); }
-.slide_4 { background-image: url(../../assets/4.jpg); }
+.slide_1 { background-image: url(../../Assets/1.jpg); }
+.slide_2 { background-image: url(../../Assets/2.jpg); }
+.slide_3 { background-image: url(../../Assets/3.jpg); }
+.slide_4 { background-image: url(../../Assets/4.jpg); }
 
 /* Custom Animation */
 .hero_enter {
